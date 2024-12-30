@@ -44,6 +44,7 @@ body{
     bottom:0;
     display:flex;
     gap:10px;
+    flex-wrap: wrap;
     
 }
 .rights{
@@ -55,27 +56,99 @@ body{
 .right{
     width:75vw;
     margin:3px;
-
+    position:relative;
+    max-height:97vh;
 }
 .nav{
     min-height: 50px;
     position:relative;
     
 }
+.nav>.img-1{
+    position:absolute;
+    top:10px;
+}
+.nav>.img-2{
+    position:absolute;
+    top:10px;
+    left:20px;
+}
 .sign{
     position:absolute;
     right:13vw;
-    top:10px;
+    top:1vw;
     color: grey;
     font-size:large;
     border:0px;
+    cursor:pointer;
 
 }
+.sign:hover{
+    font-size:1.2em;
+    color:white;
+}
+
 .log{
     font-size:large;
     position:absolute;
+    top:1px;
     right:3vw;
     padding:8px 32px;
     border-radius:100px;
     text-align:center;
+    cursor:pointer;
 }
+.log:hover{
+    font-size:1.2em;
+    font-weight:bold;
+}
+.card{
+    display:flex;
+    max-height:60vh;
+}
+.cardContainer{
+    position:relative;
+    padding:10px;
+    width:200px;
+    background-color: #252525;
+    margin:7px;
+}
+.play> img{
+    position:absolute;
+    right:10px;
+    bottom:80px;
+    width: 20px;
+    background-color: #1fdf64;
+    border-radius:52%;
+    opacity:0;
+    transition: all 1s ease-out;
+}
+.cardContainer>img{
+    width:200px;
+}
+.cardText{
+    color:grey;
+    width:200px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.playbar{
+    height:3vh;
+    position:relative;
+    background-color: rgba(6, 85, 6, 0.741);
+    width:100vw;
+    padding:12px;
+}
+.inPlay{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+.inPlay img{
+    width:24px;
+}
+.inPlay>.img1{
+    width:25px;
+}
+
